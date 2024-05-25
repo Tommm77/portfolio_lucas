@@ -6,7 +6,7 @@ export const Contact = () => {
             <div className="flex flex-col items-center">
                 <h1 className="font-bold uppercase mb-5">Contact Me</h1>
                 <h3 className="text-center text-5xl font-bold">You need a Cyber Security Engineer ?</h3>
-                <div className="flex flex-row justify-between mt-20 w-full px-44">
+                <div className="flex flex-row justify-between mt-20 w-full">
                     <div className="flex flex-col items-center space-y-4">
                         <h3 className="text-center text-5xl font-bold">Medium</h3>
                         <p className="text-center text-lg">LCS</p>
