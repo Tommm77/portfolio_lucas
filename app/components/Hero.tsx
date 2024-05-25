@@ -9,16 +9,20 @@ export const Hero = () => {
             <div className="flex flex-col items-center justify-center mt-20 px-4 md:px-8">
                 <AnimatedGradientText>
                     <WordRotate
-                        className="animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-center h-12 sm:h-32"
+                        className="animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-center h-fit sm:h-32"
                         words={[
                             "Security Expert.",
                             "Brilliant Assessor.",
+                            "Exceptional Responder.",
                             "Innovative Manager.",
                             "Skilled Defender.",
+                            "Dedicated Cryptographer.",
                             "Proficient Analyst.",
                             "Outstanding Tester.",
                             "Talented Detector.",
                             "Resilient Protector.",
+                            "Experienced Policy Maker.",
+                            "Remarkable Defender.",
                         ]}
                     />
                 </AnimatedGradientText>
