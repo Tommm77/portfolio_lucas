@@ -33,7 +33,7 @@ const slugs = [
     "mariadb",
     "microsoft",
     "azure",
-    "googlecloud",
+    "googlecloud"
 ];
 
 
