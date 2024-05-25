@@ -15,7 +15,8 @@ export const cloudProps: Omit<ICloud, "children"> = {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            width: "100%",
+            marginLeft: "15%",
+            width: "70%",
             paddingTop: 40,
         },
     },
@@ -30,7 +31,7 @@ export const cloudProps: Omit<ICloud, "children"> = {
         clickToFront: 500,
         tooltipDelay: 0,
         outlineColour: "#0000",
-        maxSpeed: 0.04,
+        maxSpeed: 0.03,
         minSpeed: 0.02,
     },
 };
