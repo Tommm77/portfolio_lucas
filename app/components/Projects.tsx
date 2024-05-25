@@ -1,7 +1,7 @@
 import React from 'react';
 import { Section } from '@/app/components/Section';
 import { Card } from './Card';
-import {CustomIconProps} from "@/app/components/icons/Icons";
+import { CustomIconProps } from "@/app/components/icons/Icons";
 
 export const Projects = () => {
     const projects = [
@@ -26,8 +26,8 @@ export const Projects = () => {
             ] as CustomIconProps[],
         },
         {
-            title: 'Project Two',
-            subtitle: 'A brief description of Project Two',
+            title: 'Project Three',
+            subtitle: 'A brief description of Project Three',
             imageUrl: '/assets/All the data bro.png',
             icons: [
                 { name: 'birthdayCake', size: 24 },
@@ -36,8 +36,8 @@ export const Projects = () => {
             ] as CustomIconProps[],
         },
         {
-            title: 'Project Two',
-            subtitle: 'A brief description of Project Two',
+            title: 'Project Four',
+            subtitle: 'A brief description of Project Four',
             imageUrl: '/assets/Hacker Cuate Illustration.png',
             icons: [
                 { name: 'birthdayCake', size: 24 },
@@ -49,7 +49,7 @@ export const Projects = () => {
 
     return (
         <Section className="relative">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-2/3 mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full sm:w-11/12 lg:w-10/12 mx-auto px-4">
                 {projects.map((project, index) => (
                     <Card key={index} {...project} />
                 ))}
