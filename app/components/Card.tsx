@@ -17,10 +17,10 @@ export const Card: React.FC<CardProps> = ({ title, subtitle, imageUrl, icons }) 
             <BorderBeam size={250} duration={12} delay={9} />
             <img src={imageUrl} alt={title} className="w-full h-96 object-cover object-center bg-accent" />
             <div className="mt-4">
-                <p className="text-gray-600">{subtitle}</p>
+                <p className="text-gray-500">{subtitle}</p>
                 <h2 className="text-xl font-bold">{title}</h2>
             </div>
-            <hr className="my-4" />
+            <hr className="my-4 border-gray-500 opacity-70" />
             <div className="flex space-x-4">
                 {icons.map((icon, index) => (
                     <CustomIcon key={index} {...icon} />

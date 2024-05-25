@@ -4,7 +4,7 @@ import {Button} from "@/components/ui/button";
 export const Navbar = () => {
     return (
         <Section>
-            <nav className="flex justify-between items-center py-4 px-32">
+            <nav className="flex justify-between items-center py-4 px-72">
                 <div className="flex items-center">
                     <a href="/" className="text-2xl font-bold">Lucas</a>
                 </div>
