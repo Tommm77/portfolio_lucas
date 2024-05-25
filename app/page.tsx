@@ -5,6 +5,7 @@ import {Projects} from "@/app/components/Projects";
 import {About} from "@/app/components/About";
 import {Stack} from "@/app/components/Stack";
 import {Contact} from "@/app/components/Contact";
+import {Footer} from "@/app/components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <About />
         <Stack />
         <Contact />
+        <Footer />
       </main>
   );
 }
