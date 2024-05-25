@@ -1,6 +1,5 @@
 import {Section} from "@/app/components/Section";
 import IconCloud from "@/app/components/magicui/icon-cloud";
-import {allowedDisplayValues} from "next/dist/compiled/@next/font/dist/constants";
 import React from "react";
 
 const slugs = [
