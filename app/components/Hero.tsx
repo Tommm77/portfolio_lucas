@@ -11,24 +11,26 @@ export const Hero = () => {
                     <WordRotate
                         className="animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-center h-fit sm:h-32"
                         words={[
-                            "Security Expert.",
-                            "Brilliant Assessor.",
-                            "Exceptional Responder.",
-                            "Innovative Manager.",
-                            "Skilled Defender.",
-                            "Dedicated Cryptographer.",
-                            "Proficient Analyst.",
-                            "Outstanding Tester.",
-                            "Talented Detector.",
-                            "Resilient Protector.",
-                            "Experienced Policy Maker.",
-                            "Remarkable Defender.",
+                            "Red Team Engineer.",
+                            "Pentester.",
+                            "Cybersecurity Consultant.",
+                            "Ethical Hacker.",
+                            "Vulnerability Assessor.",
+                            "Security Advisor.",
+                            "Incident Responder.",
+                            "Threat Analyst.",
+                            "Cyber Defense Specialist.",
+                            "Security Architect.",
+                            "Risk Manager.",
+                            "Malware Analyst.",
+                            "Digital Forensics Expert.",
+                            "Network Security Engineer.",
                         ]}
                     />
                 </AnimatedGradientText>
                 <AnimatedGradientText>
                     <span
-                        className="animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-center h-24 sm:h-32 -mt-5 sm:-mt-10">CyberSecurity Engineer</span>
+                        className="animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-center h-24 sm:h-32 -mt-5 sm:-mt-10">CyberSecurity & Cloud Engineer</span>
                 </AnimatedGradientText>
 
                 <p className="w-full sm:w-2/3 md:w-1/2 lg:w-1/3 font-semibold text-center text-sm sm:text-base md:text-lg mb-5">

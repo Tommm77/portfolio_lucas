@@ -7,7 +7,8 @@ export const About = () => {
             <div className="flex flex-col items-center">
                 <h1 className="font-bold uppercase mb-5">About Me</h1>
                 <LetterPullup
-                    words={"I'm a cybersecurity engineer \n with a strong focus on \n protecting data, mitigating risks, \n and ensuring robust security measures."}
+                    words={"I'm a cybersecurity engineer with a Master's \n in cybersecurity and cloud, based in Paris.\nI excel in protecting data, mitigating risks,\n and ensuring robust security, working effectively \nwith international teams remotely."
+                    }
                     delay={0.03}
                 />
             </div>

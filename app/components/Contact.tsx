@@ -5,8 +5,8 @@ export const Contact = () => {
         <Section className="mt-20 relative">
             <div className="flex flex-col items-center px-4 md:px-8">
                 <h1 className="font-bold uppercase mb-5 text-xl sm:text-2xl md:text-3xl">Contact Me</h1>
-                <h3 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
-                    You need a Cyber Security Engineer?
+                <h3 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold w-2/3">
+                    If you need a skilled cybersecurity professional to enhance your team, please contact me. I'm eager to contribute to your projects' success.
                 </h3>
                 <div className="flex flex-col md:flex-row justify-between mt-20 w-full space-y-10 md:space-y-0 md:space-x-10">
                     <div className="flex flex-col items-center space-y-4 w-full md:w-1/2">
