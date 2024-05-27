@@ -30,7 +30,7 @@ export const Contact = () => {
                             className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 uppercase hover:scale-110 transform-gpu transition-transform duration-300 ease-in-out"
                             href="https://www.root-me.org/LCS?lang=fr#60d6cfa6b6845f8f28c1f44001816270"
                         >
-                            Check Profile
+                            Visit Profile
                         </a>
                     </div>
                     <div className="flex flex-col items-center space-y-4 w-full md:w-1/6">
