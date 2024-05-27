@@ -17,7 +17,6 @@ export const Footer = () => {
                     <div className="flex flex-col md:flex-row items-center justify-between w-full space-y-4 md:space-y-0">
                         <div className="flex flex-col space-y-2 text-center md:text-left">
                             <p className="font-bold text-white">lucas.cyber</p>
-                            <p className="">lucas.offredi@gmail.com</p>
                             <p className="">© Lucas 2024. All rights reserved</p>
                         </div>
                         <button
