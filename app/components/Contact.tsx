@@ -1,4 +1,5 @@
 import { Section } from "@/app/components/Section";
+import Meteors from "@/app/components/magicui/meteors";
 
 export const Contact = () => {
     return (
@@ -49,6 +50,7 @@ export const Contact = () => {
                         >
                             Visit Profile
                         </button>
+                        <Meteors number={20} />
                     </div>
                 </div>
             </div>

@@ -1,6 +1,14 @@
+// components/Footer.tsx
+
+"use client";
+
 import { Section } from "@/app/components/Section";
+import { useState } from "react";
+import { ContactFormModal } from "@/app/components/ContactFormModal";
 
 export const Footer = () => {
+    const [modalOpen, setModalOpen] = useState(false);
+
     return (
         <Section className="mt-20">
             <hr className="mb-10 border-gray-100 opacity-30" />
@@ -15,12 +23,14 @@ export const Footer = () => {
                         <button
                             type="button"
                             className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center uppercase hover:scale-110 transform-gpu transition-transform duration-300 ease-in-out"
+                            onClick={() => setModalOpen(true)}
                         >
                             Contact Me
                         </button>
                     </div>
                 </div>
             </div>
+            <ContactFormModal open={modalOpen} onOpenChange={setModalOpen} />
         </Section>
     );
 };

@@ -3,7 +3,7 @@ import {Component, ComponentPropsWithoutRef} from "react";
 type SvgProps = ComponentPropsWithoutRef<"svg">;
 
 const Icons = {
-    eiffelTower: (props: SvgProps) => <svg enable-background="new 0 0 1010 1009.3905" viewBox="0 0 1010 1009.3905"
+    eiffelTower: (props: SvgProps) => <svg enableBackground="new 0 0 1010 1009.3905" viewBox="0 0 1010 1009.3905"
                                            xmlns="http://www.w3.org/2000/svg" {...props}>
         <path
             d="m877.3223 271.3104c0 54.5879-44.2149 98.8203-98.7696 98.8203-54.5536 0-98.8359-44.2324-98.8359-98.8203 0-54.5537 44.2822-98.8027 98.8359-98.8027 54.5547 0 98.7696 44.249 98.7696 98.8027z"
@@ -97,9 +97,9 @@ const Icons = {
     </svg>,
     github: (props: SvgProps) => <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" {...props}>
         <g fill="#181616">
-            <path clip-rule="evenodd"
+            <path clipRule="evenodd"
                   d="m64 1.512c-23.493 0-42.545 19.047-42.545 42.545 0 18.797 12.19 34.745 29.095 40.37 2.126.394 2.907-.923 2.907-2.047 0-1.014-.04-4.366-.058-7.92-11.837 2.573-14.334-5.02-14.334-5.02-1.935-4.918-4.724-6.226-4.724-6.226-3.86-2.64.29-2.586.29-2.586 4.273.3 6.523 4.385 6.523 4.385 3.794 6.504 9.953 4.623 12.38 3.536.383-2.75 1.485-4.628 2.702-5.69-9.45-1.075-19.384-4.724-19.384-21.026 0-4.645 1.662-8.44 4.384-11.42-.442-1.072-1.898-5.4.412-11.26 0 0 3.572-1.142 11.7 4.363 3.395-.943 7.035-1.416 10.65-1.432 3.616.017 7.258.49 10.658 1.432 8.12-5.504 11.688-4.362 11.688-4.362 2.316 5.86.86 10.187.418 11.26 2.728 2.978 4.378 6.774 4.378 11.42 0 16.34-9.953 19.938-19.427 20.99 1.526 1.32 2.886 3.91 2.886 7.88 0 5.692-.048 10.273-.048 11.674 0 1.13.766 2.458 2.922 2.04 16.896-5.632 29.07-21.574 29.07-40.365.002-23.493-19.046-42.541-42.543-42.541z"
-                  fill-rule="evenodd"/>
+                  fillRule="evenodd"/>
             <path
                 d="m37.57 62.596c-.095.212-.428.275-.73.13-.31-.14-.482-.427-.382-.64.09-.216.424-.277.733-.132.31.14.486.43.38.642zm1.723 1.924c-.203.187-.6.1-.87-.198-.278-.297-.33-.694-.124-.884.208-.188.593-.1.87.197.28.3.335.693.123.884zm1.677 2.448c-.26.182-.687.012-.95-.367-.262-.377-.262-.83.005-1.013.264-.182.684-.018.95.357.262.385.262.84-.005 1.024zm2.298 2.368c-.233.257-.73.188-1.093-.163-.372-.343-.475-.83-.242-1.087.237-.257.736-.185 1.102.163.37.342.482.83.233 1.086zm3.172 1.374c-.104.334-.582.485-1.064.344-.482-.146-.796-.536-.7-.872.1-.336.582-.493 1.067-.342.48.144.795.53.696.87zm3.48.255c.013.35-.396.642-.902.648-.508.012-.92-.272-.926-.618 0-.354.4-.642.908-.65.506-.01.92.272.92.62zm3.24-.551c.06.342-.29.694-.793.787-.494.092-.95-.12-1.014-.46-.06-.35.297-.7.79-.792.503-.088.953.118 1.017.466zm0 0"/>
         </g>
@@ -108,27 +108,27 @@ const Icons = {
             fill="#100e0f"/>
     </svg>,
     linkedin: (props: SvgProps) => <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}><path d="m0 0h24v24h-24z" fill="#fff" opacity="0" transform="matrix(-1 0 0 -1 24 24)"/><g fill="#231f20"><path d="m15.15 8.4a5.83 5.83 0 0 0 -5.85 5.82v5.88a.9.9 0 0 0 .9.9h2.1a.9.9 0 0 0 .9-.9v-5.88a1.94 1.94 0 0 1 2.15-1.93 2 2 0 0 1 1.75 2v5.81a.9.9 0 0 0 .9.9h2.1a.9.9 0 0 0 .9-.9v-5.88a5.83 5.83 0 0 0 -5.85-5.82z"/><rect height="11.7" rx=".9" width="4.5" x="3" y="9.3"/><circle cx="5.25" cy="5.25" r="2.25"/></g></svg>,
-    medium: (props: SvgProps) => <svg enable-background="new 0 0 100 100" height="100" viewBox="0 0 100 100" width="100"
+    medium: (props: SvgProps) => <svg enableBackground="new 0 0 100 100" height="100" viewBox="0 0 100 100" width="100"
                                       xmlns="http://www.w3.org/2000/svg" {...props}>
         <path
             d="m81.652 14h-63.651c-1.891.784-3.363 2.37-4.001 4.336v62.793c.917 2.826 3.562 4.871 6.687 4.871h58.279c3.885 0 7.034-3.157 7.034-7.052v-58.431c0-2.941-1.796-5.459-4.348-6.517zm-13.785 26.385h-1.4c-.52 0-1.119.682-1.119 1.163v17.437c0 .482.6 1.203 1.119 1.203h1.4v4.048h-12.555v-4.048h2.519v-18.32h-.12l-6.198 22.368h-4.798l-6.118-22.368h-.12v18.32h2.639v4.048h-10.635v-4.048h1.359c.56 0 1.16-.721 1.16-1.203v-17.437c0-.481-.6-1.163-1.16-1.163h-1.359v-4.209h13.275l4.358 16.275h.12l4.398-16.275h13.235z"/>
     </svg>,
-    lightIcon: (props: SvgProps) => <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-        <path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M22 12L23 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M12 2V1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M12 23V22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M20 20L19 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M20 4L19 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M4 20L5 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M4 4L5 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M1 12L2 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    lightIcon: (props: SvgProps) => <svg width="24" height="24" strokeWidth="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M22 12L23 12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M12 2V1" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M12 23V22" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M20 20L19 19" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M20 4L19 5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M4 20L5 19" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M4 4L5 5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M1 12L2 12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>,
-    darkIcon: (props: SvgProps) => <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+    darkIcon: (props: SvgProps) => <svg width="24" height="24" strokeWidth="1.5" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg" {...props}>
         <path
             d="M3 11.5066C3 16.7497 7.25034 21 12.4934 21C16.2209 21 19.4466 18.8518 21 15.7259C12.4934 15.7259 8.27411 11.5066 8.27411 3C5.14821 4.55344 3 7.77915 3 11.5066Z"
-            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+            stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 
 }

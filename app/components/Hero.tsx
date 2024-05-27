@@ -1,9 +1,16 @@
+// components/Hero.tsx
+"use client";
+
 import { Section } from "@/app/components/Section";
 import { CustomIcon } from "@/app/components/icons/Icons";
 import AnimatedGradientText from "@/app/components/magicui/animated-gradient-text";
 import WordRotate from "@/app/components/magicui/word-rotate";
+import { useState } from "react";
+import { ContactFormModal } from "@/app/components/ContactFormModal";
 
 export const Hero = () => {
+    const [modalOpen, setModalOpen] = useState(false);
+
     return (
         <Section className="relative">
             <div className="flex flex-col items-center justify-center mt-20 px-4 md:px-8">
@@ -43,7 +50,8 @@ export const Hero = () => {
                         <CustomIcon name={"medium"} size={24} />
                     </button>
                     <button type="button"
-                            className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 uppercase hover:scale-110 transform-gpu transition-transform duration-300 ease-in-out">
+                            className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 uppercase hover:scale-110 transform-gpu transition-transform duration-300 ease-in-out"
+                            onClick={() => setModalOpen(true)}>
                         Contact Me
                     </button>
                     <button type="button"
@@ -64,6 +72,7 @@ export const Hero = () => {
                     }}
                 />
             </div>
+            <ContactFormModal open={modalOpen} onOpenChange={setModalOpen} />
         </Section>
-    )
+    );
 }
