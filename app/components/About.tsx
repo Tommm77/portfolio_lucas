@@ -3,7 +3,7 @@ import LetterPullup from "@/app/components/magicui/letter-pullup";
 
 export const About = () => {
     return (
-        <Section className="mt-20 relative">
+        <Section className="mt-20 relative w-2/3">
             <div className="flex flex-col items-center">
                 <h1 className="font-bold uppercase mb-5">About Me</h1>
                 <LetterPullup

@@ -15,7 +15,6 @@ export default function LetterPullup({
                                          words,
                                          delay,
                                      }: LetterPullupProps) {
-    // Split the text into lines, then into letters
     const lines = words.split("\n");
     const controls = useAnimation();
     const ref = useRef(null);
@@ -26,7 +25,7 @@ export default function LetterPullup({
             y: 0,
             opacity: 1,
             transition: {
-                delay: i * (delay ? delay : 0.05), // By default, delay each letter's animation by 0.05 seconds
+                delay: i * (delay ? delay : 0.05),
             },
         }),
     };
@@ -38,7 +37,7 @@ export default function LetterPullup({
                     controls.start("animate");
                 }
             },
-            { threshold: 0.1 } // Adjust the threshold as needed
+            { threshold: 0.1 }
         );
 
         if (ref.current) {
@@ -53,23 +52,24 @@ export default function LetterPullup({
     }, [controls]);
 
     return (
-        <div className="flex flex-col items-center" ref={ref}>
+        <div className={cn("flex flex-col items-center w-full", className)} ref={ref}>
             {lines.map((line, lineIndex) => (
-                <div className="flex justify-center" key={lineIndex}>
+                <div className="flex justify-center w-full" key={lineIndex}>
                     {line.split("").map((letter, i) => (
-                        <motion.h1
+                        <motion.span
                             key={i}
                             variants={pullupVariant}
                             initial="initial"
                             animate={controls}
-                            custom={i + lineIndex * line.length} // Ensure unique delay for each letter
+                            custom={i + lineIndex * line.length}
                             className={cn(
-                                "font-display text-center text-xl font-bold tracking-[-0.02em] drop-shadow-sm md:text-7xl md:leading-[5rem]",
-                                className,
+                                "font-display text-center text-lg md:text-5xl font-bold tracking-[-0.02em] drop-shadow-sm",
+                                className
                             )}
+                            style={{ display: "inline-block", whiteSpace: "pre" }}
                         >
-                            {letter === " " ? <span>&nbsp;</span> : letter}
-                        </motion.h1>
+                            {letter === " " ? "\u00A0" : letter}
+                        </motion.span>
                     ))}
                 </div>
             ))}
