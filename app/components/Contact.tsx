@@ -1,5 +1,4 @@
 import { Section } from "@/app/components/Section";
-import Meteors from "@/app/components/magicui/meteors";
 
 export const Contact = () => {
     return (
@@ -7,7 +6,8 @@ export const Contact = () => {
             <div className="flex flex-col items-center px-4 md:px-8">
                 <h1 className="font-bold uppercase mb-5 text-xl sm:text-2xl md:text-3xl">Contact Me</h1>
                 <h3 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold w-2/3">
-                    If you need a skilled cybersecurity professional to enhance your team, please contact me. I am eager to contribute to your projects success.
+                    {/* eslint-disable-next-line react/no-unescaped-entities */}
+                    If you need a skilled cybersecurity professional to enhance your team, please contact me. I am eager to contribute to your project's success.
                 </h3>
                 <div
                     className="flex flex-col md:flex-row justify-center mt-20 w-full space-y-10 md:space-y-0 md:space-x-10">
@@ -41,7 +41,7 @@ export const Contact = () => {
                             Visit Profile
                         </button>
                     </div>
-                    <div className="flex flex-col items-center space-y-4 w-full md:w-1/6">
+                    <div className="flex flex-col items-center space-y-4 w-full md:w-1/6 relative">
                         <h3 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">Linkedin</h3>
                         <p className="text-center text-lg">Lucas Offredi</p>
                         <button
@@ -50,7 +50,6 @@ export const Contact = () => {
                         >
                             Visit Profile
                         </button>
-                        <Meteors number={20} />
                     </div>
                 </div>
             </div>
