@@ -56,7 +56,7 @@ export function ContactFormModal({ open, onOpenChange }: { open: boolean, onOpen
             message: values.message,
         };
 
-        emailjs.send('service_0cznrpe', 'template_hrlp65g', templateParams, 'm3fzk3pP72MQnXCfL')
+        emailjs.send('service_5vpijpr', 'template_eud90pv', templateParams, 'j0sJ7KSIFeZO_OM80')
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
                 form.reset();
