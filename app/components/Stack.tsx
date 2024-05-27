@@ -17,7 +17,6 @@ const slugs = [
     "burpsuite",
     "wireshark",
     "metasploit",
-    "nmap",
     "metasploit",
     "ansible",
     "terraform",
@@ -31,7 +30,6 @@ const slugs = [
     "mysql",
     "mariadb",
     "microsoft",
-    "azure",
     "googlecloud"
 ];
 
