@@ -1,3 +1,4 @@
+// components/IconCloud.tsx
 "use client";
 
 import { useEffect, useMemo, useState } from "react";

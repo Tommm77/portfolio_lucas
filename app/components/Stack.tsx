@@ -1,6 +1,8 @@
-import {Section} from "@/app/components/Section";
-import IconCloud from "@/app/components/magicui/icon-cloud";
+import { Section } from "@/app/components/Section";
 import React from "react";
+import dynamic from 'next/dynamic';
+
+const DynamicIconCloud = dynamic(() => import('@/app/components/magicui/icon-cloud'), { ssr: false });
 
 const slugs = [
     "android",
@@ -33,13 +35,12 @@ const slugs = [
     "googlecloud"
 ];
 
-
 export const Stack = () => {
     return (
         <Section className="mt-20 relative">
             <div className="flex flex-col items-center">
                 <h1 className="font-bold uppercase mb-5">Stack</h1>
-                <IconCloud iconSlugs={slugs}/>
+                <DynamicIconCloud iconSlugs={slugs} />
             </div>
             <div
                 className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(130%-30rem)]"
