@@ -24,6 +24,9 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useState } from "react";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { RocketIcon, ExclamationTriangleIcon } from "@radix-ui/react-icons";
 
 const contactFormSchema = z.object({
     name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -43,6 +46,8 @@ export function ContactFormModal({ open, onOpenChange }: { open: boolean, onOpen
         },
     });
 
+    const [alert, setAlert] = useState<{ type: 'success' | 'error', message: string } | null>(null);
+
     const onSubmit = (values: ContactFormValues) => {
         const templateParams = {
             to_name: "Lucas",
@@ -54,12 +59,15 @@ export function ContactFormModal({ open, onOpenChange }: { open: boolean, onOpen
         emailjs.send('service_0cznrpe', 'template_hrlp65g', templateParams, 'm3fzk3pP72MQnXCfL')
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
-                // Optionally show a success message or reset the form
                 form.reset();
-                onOpenChange(false);
+                setAlert({ type: 'success', message: 'Your message has been sent successfully!' });
+                setTimeout(() => {
+                    setAlert(null);
+                    onOpenChange(false);
+                }, 3000);
             }, (error) => {
                 console.log('FAILED...', error);
-                // Optionally show an error message
+                setAlert({ type: 'error', message: 'Failed to send your message. Please try again later.' });
             });
     };
 
@@ -97,6 +105,7 @@ export function ContactFormModal({ open, onOpenChange }: { open: boolean, onOpen
                                     <FormControl>
                                         <Input placeholder="john.doe@example.com" {...field} />
                                     </FormControl>
+                                    {/* eslint-disable-next-line react/no-unescaped-entities */}
                                     <FormDescription>We'll never share your email.</FormDescription>
                                     <FormMessage />
                                 </FormItem>
@@ -119,6 +128,13 @@ export function ContactFormModal({ open, onOpenChange }: { open: boolean, onOpen
                         <Button type="submit">Submit</Button>
                     </form>
                 </Form>
+                {alert && (
+                    <Alert className="mt-4" variant={alert.type === 'success' ? 'default' : 'destructive'}>
+                        {alert.type === 'success' ? <RocketIcon className="h-4 w-4" /> : <ExclamationTriangleIcon className="h-4 w-4" />}
+                        <AlertTitle>{alert.type === 'success' ? 'Success!' : 'Error'}</AlertTitle>
+                        <AlertDescription>{alert.message}</AlertDescription>
+                    </Alert>
+                )}
             </DialogContent>
         </Dialog>
     );
