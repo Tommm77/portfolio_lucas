@@ -16,7 +16,7 @@ export const Footer = () => {
                 <div className="flex flex-col w-full md:w-2/3 lg:w-1/2 items-center">
                     <div className="flex flex-col md:flex-row items-center justify-between w-full space-y-4 md:space-y-0">
                         <div className="flex flex-col space-y-2 text-center md:text-left">
-                            <p className="font-bold text-white">lcs-pfnpm i @vercel/speed-insights</p>
+                            <p className="font-bold text-white">lcs-pf</p>
                             <p className="">© Lucas 2024. All rights reserved</p>
                         </div>
                         <button
