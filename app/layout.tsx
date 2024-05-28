@@ -20,6 +20,10 @@ export default function RootLayout({
 }>) {
   return (
       <html lang="en" suppressHydrationWarning className="h-full">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>Portfolio Lucas</title>
+      </head>
       <body className={cn(inter.className, 'h-full')}>
       <ThemeProvider>
         {children}
