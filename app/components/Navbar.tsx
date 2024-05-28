@@ -15,8 +15,9 @@ export const Navbar = () => {
     return (
         <Section>
             <nav className="flex justify-between items-center py-4 px-4 md:px-8 lg:px-16 xl:px-72 w-full">
-                <div className="flex items-center">
-                    <a href="/" className="text-xl md:text-2xl font-bold">Lucas</a>
+                <div className="flex items-center space-x-4">
+                    <CustomIcon name="logo" size={36} />
+                    <a href="/" className="text-xl md:text-2xl font-bold">lcs-pf</a>
                 </div>
                 <div className="flex items-center space-x-4">
                     <div className="flex items-center space-x-2">

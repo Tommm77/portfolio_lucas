@@ -5,6 +5,7 @@
 import { Section } from "@/app/components/Section";
 import { useState } from "react";
 import { ContactFormModal } from "@/app/components/ContactFormModal";
+import {CustomIcon} from "@/app/components/icons/Icons";
 
 export const Footer = () => {
     const [modalOpen, setModalOpen] = useState(false);
@@ -16,7 +17,10 @@ export const Footer = () => {
                 <div className="flex flex-col w-full md:w-2/3 lg:w-1/2 items-center">
                     <div className="flex flex-col md:flex-row items-center justify-between w-full space-y-4 md:space-y-0">
                         <div className="flex flex-col space-y-2 text-center md:text-left">
-                            <p className="font-bold text-white">lcs-pf</p>
+                            <div className="flex space-x-4 items-center">
+                                <CustomIcon name="logo" size={36}/>
+                                <p className="font-bold text-white">lcs-pf</p>
+                            </div>
                             <p className="">© Lucas 2024. All rights reserved</p>
                         </div>
                         <button
