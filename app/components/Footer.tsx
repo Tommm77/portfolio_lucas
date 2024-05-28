@@ -19,7 +19,7 @@ export const Footer = () => {
                         <div className="flex flex-col space-y-2 text-center md:text-left">
                             <div className="flex space-x-4 items-center">
                                 <CustomIcon name="logo" size={36}/>
-                                <p className="font-bold text-white">lcs-pf</p>
+                                <p className="font-bold">lcs-pf</p>
                             </div>
                             <p className="">{t('copyright')}</p>
                         </div>
