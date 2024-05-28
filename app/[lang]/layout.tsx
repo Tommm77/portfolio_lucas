@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/app/components/ThemeContext";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 import React from "react";
-import {NextIntlClientProvider} from "next-intl";
-import {getLocale, getMessages} from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,22 +15,25 @@ export const metadata: Metadata = {
     description: "Here is my portfolio to show my skills and projects.",
 };
 
-export default  async function RootLayout({
-                                              children,
-                                          }: Readonly<{
+export default async function RootLayout({
+                                             children,
+                                             params
+                                         }: {
     children: React.ReactNode;
-}>) {
-    const locale = await getLocale();
-    const messages = await getMessages();
+    params: { lang: string };
+}) {
+    const locale = params.lang || 'en';
+    const messages = await getMessages(locale);
+
     return (
-        <html lang="en" suppressHydrationWarning className="h-full">
+        <html lang={locale} suppressHydrationWarning className="h-full">
         <head>
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="../favicon.ico" />
             <title>Portfolio Lucas</title>
         </head>
         <body className={cn(inter.className, 'h-full')}>
         <ThemeProvider>
-            <NextIntlClientProvider messages={messages}>
+            <NextIntlClientProvider locale={locale} messages={messages}>
                 {children}
             </NextIntlClientProvider>
             <Analytics />
@@ -40,4 +42,9 @@ export default  async function RootLayout({
         </body>
         </html>
     );
+}
+
+async function getMessages(locale: string) {
+    const messages = (await import(`../../messages/${locale}.json`)).default;
+    return messages;
 }

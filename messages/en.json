@@ -1,0 +1,105 @@
+{
+  "About": {
+    "title": "About Me",
+    "description": "I'm a cybersecurity engineer with a Master's in cybersecurity and cloud, based in Paris. I excel in protecting data, mitigating risks, and ensuring robust security."
+  },
+  "Contact": {
+    "title": "Contact Me",
+    "description": "If you need a skilled cybersecurity professional to enhance your team, please contact me. I am eager to contribute to your project's success.",
+    "medium": {
+      "title": "Medium",
+      "profile": "See Posts",
+      "username": "LCS"
+    },
+    "rootMe": {
+      "title": "RootMe",
+      "profile": "Visit Profile",
+      "username": "LCS"
+    },
+    "hackTheBox": {
+      "title": "HackTheBox",
+      "profile": "Visit Profile",
+      "username": "LCS6"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "profile": "Visit Profile",
+      "username": "Lucas O"
+    }
+  },
+  "ContactFormModal": {
+    "title": "Contact Us",
+    "description": "Fill out the form below to get in touch with us.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "John Doe",
+      "nameDescription": "Your full name.",
+      "email": "Email",
+      "emailPlaceholder": "john.doe@example.com",
+      "emailDescription": "We'll never share your email.",
+      "message": "Message",
+      "messagePlaceholder": "Your message...",
+      "messageDescription": "Your message to us.",
+      "submit": "Submit"
+    },
+    "alert": {
+      "successTitle": "Success!",
+      "successDescription": "Your message has been sent successfully!",
+      "errorTitle": "Error",
+      "errorDescription": "Failed to send your message. Please try again later."
+    }
+  },
+  "Footer": {
+    "contactMe": "Contact Me",
+    "copyright": "© Lucas 2024. All rights reserved"
+  },
+  "Hero": {
+    "titles": [
+      "Red Team Engineer.",
+      "Pentester.",
+      "Cybersecurity Consultant.",
+      "Ethical Hacker.",
+      "Vulnerability Assessor.",
+      "Security Advisor.",
+      "Incident Responder.",
+      "Threat Analyst.",
+      "Cyber Defense Specialist.",
+      "Security Architect.",
+      "Risk Manager.",
+      "Malware Analyst.",
+      "Digital Forensics Expert.",
+      "Network Security Engineer."
+    ],
+    "subtitle": "CyberSecurity & Cloud Engineer",
+    "description": "Hi 👋. My name is Lucas, and I am a cybersecurity engineer living in Paris & working remotely with the whole world.",
+    "contactMe": "Contact Me"
+  },
+  "Navbar": {
+    "logo": "lcs-pf",
+    "contact": "Contact Me"
+  },
+  "Projects": {
+    "projectOne": {
+      "title": "Project One",
+      "description": "A brief description of Project One"
+    },
+    "projectTwo": {
+      "title": "Project Two",
+      "description": "A brief description of Project Two"
+    },
+    "projectThree": {
+      "title": "Project Three",
+      "description": "A brief description of Project Three"
+    },
+    "projectFour": {
+      "title": "Project Four",
+      "description": "A brief description of Project Four"
+    }
+  },
+  "LanguageSwitcher": {
+    "title": "Language",
+    "description": "Select your preferred language.",
+    "english": "English",
+    "french": "French"
+  }
+}

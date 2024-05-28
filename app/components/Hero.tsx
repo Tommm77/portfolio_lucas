@@ -1,4 +1,3 @@
-// components/Hero.tsx
 "use client";
 
 import { Section } from "@/app/components/Section";
@@ -7,8 +6,10 @@ import AnimatedGradientText from "@/app/components/magicui/animated-gradient-tex
 import WordRotate from "@/app/components/magicui/word-rotate";
 import { useState } from "react";
 import { ContactFormModal } from "@/app/components/ContactFormModal";
+import { useTranslations } from 'next-intl';
 
 export const Hero = () => {
+    const t = useTranslations('Hero');
     const [modalOpen, setModalOpen] = useState(false);
 
     return (
@@ -17,47 +18,34 @@ export const Hero = () => {
                 <AnimatedGradientText>
                     <WordRotate
                         className="animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-center h-fit sm:h-32"
-                        words={[
-                            "Red Team Engineer.",
-                            "Pentester.",
-                            "Cybersecurity Consultant.",
-                            "Ethical Hacker.",
-                            "Vulnerability Assessor.",
-                            "Security Advisor.",
-                            "Incident Responder.",
-                            "Threat Analyst.",
-                            "Cyber Defense Specialist.",
-                            "Security Architect.",
-                            "Risk Manager.",
-                            "Malware Analyst.",
-                            "Digital Forensics Expert.",
-                            "Network Security Engineer.",
-                        ]}
+                        words={t.raw('titles')}
                     />
                 </AnimatedGradientText>
                 <AnimatedGradientText>
                     <span
-                        className="animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-center -mt-5 sm:-mt-10 pb-8">CyberSecurity & Cloud Engineer</span>
+                        className="animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-center -mt-5 sm:-mt-10 pb-8">
+                        {t('subtitle')}
+                    </span>
                 </AnimatedGradientText>
 
                 <p className="w-full sm:w-2/3 md:w-1/2 lg:w-1/3 font-semibold text-center text-sm sm:text-base md:text-lg mb-5">
-                    Hi 👋. My name is Lucas, and I am a cybersecurity engineer living in Paris & working remotely with the whole world.
+                    {t('description')}
                 </p>
 
                 <div className="flex flex-row">
                     <a type="button"
-                            className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-                    href="https://medium.com/@swzwnc">
+                       className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                       href="https://medium.com/@swzwnc">
                         <CustomIcon name={"medium"} size={24} />
                     </a>
                     <button type="button"
                             className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 uppercase hover:scale-110 transform-gpu transition-transform duration-300 ease-in-out"
                             onClick={() => setModalOpen(true)}>
-                        Contact Me
+                        {t('contactMe')}
                     </button>
                     <a type="button"
-                            className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-                    href="https://www.linkedin.com/in/lucas-o-a34971243/">
+                       className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                       href="https://www.linkedin.com/in/lucas-o-a34971243/">
                         <CustomIcon name={"linkedin"} size={24} />
                     </a>
                 </div>

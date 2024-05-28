@@ -1,4 +1,3 @@
-// components/ContactFormModal.tsx
 "use client";
 
 import { useForm } from "react-hook-form";
@@ -27,6 +26,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { RocketIcon, ExclamationTriangleIcon } from "@radix-ui/react-icons";
+import { useTranslations } from 'next-intl';
 
 const contactFormSchema = z.object({
     name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -37,6 +37,8 @@ const contactFormSchema = z.object({
 type ContactFormValues = z.infer<typeof contactFormSchema>;
 
 export function ContactFormModal({ open, onOpenChange }: { open: boolean, onOpenChange: (open: boolean) => void }) {
+    const t = useTranslations('ContactFormModal');
+
     const form = useForm<ContactFormValues>({
         resolver: zodResolver(contactFormSchema),
         defaultValues: {
@@ -60,14 +62,14 @@ export function ContactFormModal({ open, onOpenChange }: { open: boolean, onOpen
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
                 form.reset();
-                setAlert({ type: 'success', message: 'Your message has been sent successfully!' });
+                setAlert({ type: 'success', message: t('alert.successDescription') });
                 setTimeout(() => {
                     setAlert(null);
                     onOpenChange(false);
                 }, 3000);
             }, (error) => {
                 console.log('FAILED...', error);
-                setAlert({ type: 'error', message: 'Failed to send your message. Please try again later.' });
+                setAlert({ type: 'error', message: t('alert.errorDescription') });
             });
     };
 
@@ -75,9 +77,9 @@ export function ContactFormModal({ open, onOpenChange }: { open: boolean, onOpen
         <Dialog open={open} onOpenChange={onOpenChange}>
             <DialogContent>
                 <DialogHeader>
-                    <DialogTitle>Contact Us</DialogTitle>
+                    <DialogTitle>{t('title')}</DialogTitle>
                     <DialogDescription>
-                        Fill out the form below to get in touch with us.
+                        {t('description')}
                     </DialogDescription>
                 </DialogHeader>
                 <Form {...form}>
@@ -87,11 +89,11 @@ export function ContactFormModal({ open, onOpenChange }: { open: boolean, onOpen
                             name="name"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>Name</FormLabel>
+                                    <FormLabel>{t('form.name')}</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="John Doe" {...field} />
+                                        <Input placeholder={t('form.namePlaceholder')} {...field} />
                                     </FormControl>
-                                    <FormDescription>Your full name.</FormDescription>
+                                    <FormDescription>{t('form.nameDescription')}</FormDescription>
                                     <FormMessage />
                                 </FormItem>
                             )}
@@ -101,12 +103,11 @@ export function ContactFormModal({ open, onOpenChange }: { open: boolean, onOpen
                             name="email"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>Email</FormLabel>
+                                    <FormLabel>{t('form.email')}</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="john.doe@example.com" {...field} />
+                                        <Input placeholder={t('form.emailPlaceholder')} {...field} />
                                     </FormControl>
-                                    {/* eslint-disable-next-line react/no-unescaped-entities */}
-                                    <FormDescription>We'll never share your email.</FormDescription>
+                                    <FormDescription>{t('form.emailDescription')}</FormDescription>
                                     <FormMessage />
                                 </FormItem>
                             )}
@@ -116,22 +117,22 @@ export function ContactFormModal({ open, onOpenChange }: { open: boolean, onOpen
                             name="message"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>Message</FormLabel>
+                                    <FormLabel>{t('form.message')}</FormLabel>
                                     <FormControl>
-                                        <Textarea placeholder="Your message..." {...field} />
+                                        <Textarea placeholder={t('form.messagePlaceholder')} {...field} />
                                     </FormControl>
-                                    <FormDescription>Your message to us.</FormDescription>
+                                    <FormDescription>{t('form.messageDescription')}</FormDescription>
                                     <FormMessage />
                                 </FormItem>
                             )}
                         />
-                        <Button type="submit">Submit</Button>
+                        <Button type="submit">{t('form.submit')}</Button>
                     </form>
                 </Form>
                 {alert && (
                     <Alert className="mt-4" variant={alert.type === 'success' ? 'default' : 'destructive'}>
                         {alert.type === 'success' ? <RocketIcon className="h-4 w-4" /> : <ExclamationTriangleIcon className="h-4 w-4" />}
-                        <AlertTitle>{alert.type === 'success' ? 'Success!' : 'Error'}</AlertTitle>
+                        <AlertTitle>{alert.type === 'success' ? t('alert.successTitle') : t('alert.errorTitle')}</AlertTitle>
                         <AlertDescription>{alert.message}</AlertDescription>
                     </Alert>
                 )}

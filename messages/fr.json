@@ -1,0 +1,105 @@
+{
+  "About": {
+    "title": "À Propos",
+    "description": "Je suis ingénieur en cybersécurité avec un Master en cybersécurité et cloud, basé à Paris. J'excelle dans la protection des données, la réduction des risques et l'assurance de la sécurité robuste."
+  },
+  "Contact": {
+    "title": "Contactez-moi",
+    "description": "Si vous avez besoin d'un professionnel en cybersécurité compétent pour renforcer votre équipe, veuillez me contacter. Je suis impatient de contribuer au succès de votre projet.",
+    "medium": {
+      "title": "Medium",
+      "profile": "Voir les articles",
+      "username": "LCS"
+    },
+    "rootMe": {
+      "title": "RootMe",
+      "profile": "Visiter le profil",
+      "username": "LCS"
+    },
+    "hackTheBox": {
+      "title": "HackTheBox",
+      "profile": "Visiter le profil",
+      "username": "LCS6"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "profile": "Visiter le profil",
+      "username": "Lucas O"
+    }
+  },
+  "ContactFormModal": {
+    "title": "Contactez-nous",
+    "description": "Remplissez le formulaire ci-dessous pour nous contacter.",
+    "form": {
+      "name": "Nom",
+      "namePlaceholder": "Jean Dupont",
+      "nameDescription": "Votre nom complet.",
+      "email": "Email",
+      "emailPlaceholder": "jean.dupont@example.com",
+      "emailDescription": "Nous ne partagerons jamais votre email.",
+      "message": "Message",
+      "messagePlaceholder": "Votre message...",
+      "messageDescription": "Votre message pour nous.",
+      "submit": "Envoyer"
+    },
+    "alert": {
+      "successTitle": "Succès!",
+      "successDescription": "Votre message a été envoyé avec succès!",
+      "errorTitle": "Erreur",
+      "errorDescription": "Échec de l'envoi de votre message. Veuillez réessayer plus tard."
+    }
+  },
+  "Footer": {
+    "contactMe": "Contactez-moi",
+    "copyright": "© Lucas 2024. Tous droits réservés"
+  },
+  "Hero": {
+    "titles": [
+      "Ingénieur Red Team.",
+      "Pentester.",
+      "Consultant en Cybersécurité.",
+      "Hacker Éthique.",
+      "Évaluateur de Vulnérabilités.",
+      "Conseiller en Sécurité.",
+      "Répondeur aux Incidents.",
+      "Analyste des Menaces.",
+      "Spécialiste en Défense Cyber.",
+      "Architecte de Sécurité.",
+      "Gestionnaire de Risques.",
+      "Analyste de Malware.",
+      "Expert en Informatique Légale.",
+      "Ingénieur Sécurité Réseau."
+    ],
+    "subtitle": "Ingénieur Cybersécurité & Cloud",
+    "description": "Bonjour 👋. Je m'appelle Lucas, et je suis un ingénieur en cybersécurité vivant à Paris et travaillant à distance avec le monde entier.",
+    "contactMe": "Contactez-moi"
+  },
+  "Navbar": {
+    "logo": "lcs-pf",
+    "contact": "Contactez-moi"
+  },
+  "Projects": {
+    "projectOne": {
+      "title": "Projet Un",
+      "description": "Une brève description du Projet Un"
+    },
+    "projectTwo": {
+      "title": "Projet Deux",
+      "description": "Une brève description du Projet Deux"
+    },
+    "projectThree": {
+      "title": "Projet Trois",
+      "description": "Une brève description du Projet Trois"
+    },
+    "projectFour": {
+      "title": "Projet Quatre",
+      "description": "Une brève description du Projet Quatre"
+    }
+  },
+  "LanguageSwitcher": {
+    "title": "Changer de Langue",
+    "description": "Sélectionnez votre langue préférée.",
+    "english": "Anglais",
+    "french": "Français"
+  }
+}

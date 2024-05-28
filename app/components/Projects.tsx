@@ -1,13 +1,14 @@
-import React from 'react';
-import { Section } from '@/app/components/Section';
+import { Section } from "@/app/components/Section";
+import { useTranslations } from 'next-intl';
 import { Card } from './Card';
 import { CustomIconProps } from "@/app/components/icons/Icons";
 
 export const Projects = () => {
+    const t = useTranslations('Projects');
     const projects = [
         {
-            title: 'Project One',
-            subtitle: 'A brief description of Project One',
+            title: t('projectOne.title'),
+            subtitle: t('projectOne.description'),
             imageUrl: '/assets/Rafiki Privacy Policy.png',
             icons: [
                 { name: 'eiffelTower', size: 24 },
@@ -16,8 +17,8 @@ export const Projects = () => {
             ] as CustomIconProps[],
         },
         {
-            title: 'Project Two',
-            subtitle: 'A brief description of Project Two',
+            title: t('projectTwo.title'),
+            subtitle: t('projectTwo.description'),
             imageUrl: '/assets/Hidden mining amico.png',
             icons: [
                 { name: 'birthdayCake', size: 24 },
@@ -26,8 +27,8 @@ export const Projects = () => {
             ] as CustomIconProps[],
         },
         {
-            title: 'Project Three',
-            subtitle: 'A brief description of Project Three',
+            title: t('projectThree.title'),
+            subtitle: t('projectThree.description'),
             imageUrl: '/assets/All the data bro.png',
             icons: [
                 { name: 'birthdayCake', size: 24 },
@@ -36,8 +37,8 @@ export const Projects = () => {
             ] as CustomIconProps[],
         },
         {
-            title: 'Project Four',
-            subtitle: 'A brief description of Project Four',
+            title: t('projectFour.title'),
+            subtitle: t('projectFour.description'),
             imageUrl: '/assets/Hacker Cuate Illustration.png',
             icons: [
                 { name: 'birthdayCake', size: 24 },

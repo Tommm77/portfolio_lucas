@@ -1,15 +1,17 @@
 import { Section } from "@/app/components/Section";
 import LetterPullup from "@/app/components/magicui/letter-pullup";
+import { useTranslations } from 'next-intl';
 
 export const About = () => {
+    const t = useTranslations('About');
+
     return (
         <Section className="mt-20 relative w-2/3">
             <div className="flex flex-col items-center">
-                <h1 className="font-bold uppercase mb-5">About Me</h1>
-                <LetterPullup
-                    words={"I'm a cybersecurity engineer with a Master's \n in cybersecurity and cloud, based in Paris. \nI excel in protecting data, mitigating risks,\n and ensuring robust security."}
-                    delay={0.04}
-                />
+                <h1 className="font-bold uppercase mb-5">{t('title')}</h1>
+                <p className="text-center text-lg mb-10">
+                    {t('description')}
+                </p>
             </div>
             <div
                 className="absolute inset-x-0 top-[calc(80%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(80%-30rem)]"

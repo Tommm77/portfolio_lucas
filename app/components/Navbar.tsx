@@ -1,4 +1,3 @@
-// components/Navbar.tsx
 "use client";
 
 import { Section } from "@/app/components/Section";
@@ -7,10 +6,13 @@ import { Switch } from "@/components/ui/switch";
 import { CustomIcon } from "@/app/components/icons/Icons";
 import { useState } from "react";
 import { ContactFormModal } from "@/app/components/ContactFormModal";
+import { useTranslations } from 'next-intl';
+import LanguageSwitcherDropdown from "@/app/components/LanguageSwitcherDropdown";
 
 export const Navbar = () => {
     const { theme, toggleTheme } = useTheme();
     const [modalOpen, setModalOpen] = useState(false);
+    const t = useTranslations('Navbar');
 
     return (
         <Section>
@@ -29,12 +31,13 @@ export const Navbar = () => {
                         />
                         <CustomIcon name="darkIcon" size={24} />
                     </div>
+                    <LanguageSwitcherDropdown />
                     <button
                         type="button"
                         className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 text-center uppercase hover:scale-110 transform-gpu transition-transform duration-300 ease-in-out"
                         onClick={() => setModalOpen(true)}
                     >
-                        Contact Me
+                        {t('contact')}
                     </button>
                 </div>
             </nav>
