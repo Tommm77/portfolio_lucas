@@ -1,7 +1,7 @@
 {
   "About": {
     "title": "À Propos",
-    "description": "Je suis ingénieur en cybersécurité avec un Master \n en cybersécurité et cloud, basé à Paris. \nJ'excelle dans la protection des données,\n la réduction des risques et l'assurance de la sécurité robuste."
+    "description": "Je suis ingénieur en cybersécurité \n avec un Master  en cybersécurité et cloud,\n basé à Paris.  J'excelle dans \nla protection des données,\n la réduction des risques \net l'assurance de la sécurité robuste."
   },
   "Contact": {
     "title": "Contactez-moi",
@@ -97,7 +97,7 @@
     }
   },
   "LanguageSwitcher": {
-    "title": "Changer de Langue",
+    "title": "Langue",
     "description": "Sélectionnez votre langue préférée.",
     "english": "Anglais",
     "french": "Français"
