@@ -80,20 +80,20 @@
   },
   "Projects": {
     "projectOne": {
-      "title": "Project One",
-      "description": "A brief description of Project One"
+      "title": "Write up Bash — Shells restreints",
+      "description": "Write up Bash — Shells restreints on RootMe platform."
     },
     "projectTwo": {
-      "title": "Project Two",
-      "description": "A brief description of Project Two"
+      "title": "Headless HackTheBox Writeup",
+      "description": "Headless HackTheBox Writeup on HackTheBox platform."
     },
     "projectThree": {
-      "title": "Project Three",
-      "description": "A brief description of Project Three"
+      "title": "Write up Docker — I am groot",
+      "description": "Write up Docker — I am groot on RootMe platform."
     },
     "projectFour": {
-      "title": "Project Four",
-      "description": "A brief description of Project Four"
+      "title": "Pentest Mr Robot — VulnHub",
+      "description": "Pentest Mr Robot — VulnHub on VulnHub platform."
     }
   },
   "LanguageSwitcher": {

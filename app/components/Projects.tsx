@@ -9,7 +9,7 @@ export const Projects = () => {
         {
             title: t('projectOne.title'),
             subtitle: t('projectOne.description'),
-            imageUrl: '/assets/Rafiki Privacy Policy.png',
+            imageUrl: '/assets/DALL·E May 29 Write up Bash.jpeg',
             icons: [
                 { name: 'eiffelTower', size: 24 },
                 { name: 'github', size: 24 },
@@ -19,7 +19,7 @@ export const Projects = () => {
         {
             title: t('projectTwo.title'),
             subtitle: t('projectTwo.description'),
-            imageUrl: '/assets/Hidden mining amico.png',
+            imageUrl: '/assets/DALL·E May 29 Terminal.jpeg',
             icons: [
                 { name: 'birthdayCake', size: 24 },
                 { name: 'work', size: 24 },
@@ -29,7 +29,7 @@ export const Projects = () => {
         {
             title: t('projectThree.title'),
             subtitle: t('projectThree.description'),
-            imageUrl: '/assets/All the data bro.png',
+            imageUrl: '/assets/DALL·E May 29 Image.jpeg',
             icons: [
                 { name: 'birthdayCake', size: 24 },
                 { name: 'work', size: 24 },
@@ -39,7 +39,7 @@ export const Projects = () => {
         {
             title: t('projectFour.title'),
             subtitle: t('projectFour.description'),
-            imageUrl: '/assets/Hacker Cuate Illustration.png',
+            imageUrl: '/assets/DALL·E May 29 Pentest Mr Robot.jpeg',
             icons: [
                 { name: 'birthdayCake', size: 24 },
                 { name: 'work', size: 24 },

@@ -80,20 +80,20 @@
   },
   "Projects": {
     "projectOne": {
-      "title": "Projet Un",
-      "description": "Une brève description du Projet Un"
+      "title": "Write up Bash — Shells restreints",
+      "description": "Writeup de la machine Bash sur HackTheBox. Cette machine classée facile."
     },
     "projectTwo": {
-      "title": "Projet Deux",
-      "description": "Une brève description du Projet Deux"
+      "title": "Headless HackTheBox Writeup",
+      "description": "Writeup de la machine Headless sur HackTheBox."
     },
     "projectThree": {
-      "title": "Projet Trois",
-      "description": "Une brève description du Projet Trois"
+      "title": "Write up Docker — I am groot",
+      "description": "Writeup de la machine Docker sur HackTheBox. Cette machine classée facile."
     },
     "projectFour": {
-      "title": "Projet Quatre",
-      "description": "Une brève description du Projet Quatre"
+      "title": "Pentest Mr Robot — VulnHub",
+      "description": "Pentest de la machine Mr Robot sur VulnHub. Cette machine classée facile."
     }
   },
   "LanguageSwitcher": {
